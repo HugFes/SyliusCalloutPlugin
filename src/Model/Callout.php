@@ -68,7 +68,8 @@ class Callout implements CalloutInterface
         return $this->name;
     }
 
-    public function setName(string $name): void
+    //allow null value ands validate this with validator constraint
+    public function setName(?string $name): void
     {
         $this->name = $name;
     }
@@ -98,7 +99,8 @@ class Callout implements CalloutInterface
         return $this->priority;
     }
 
-    public function setPriority(int $priority): void
+    //allow null value ands validate this with validator constraint
+    public function setPriority(?int $priority): void
     {
         $this->priority = $priority;
     }

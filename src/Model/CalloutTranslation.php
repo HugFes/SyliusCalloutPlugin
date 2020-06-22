@@ -23,8 +23,8 @@ class CalloutTranslation extends AbstractTranslation implements CalloutTranslati
     {
         return $this->text;
     }
-
-    public function setText(string $text): void
+    //allow null value ands validate this with validator constraint
+    public function setText(?string $text): void
     {
         $this->text = $text;
     }

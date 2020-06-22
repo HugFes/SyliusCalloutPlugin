@@ -5,6 +5,8 @@ setono_sylius_callout:
             not_blank: Code cannot be blank.
         name:
             not_blank: Name cannot be blank.
+        position:
+            not_blank: Please select the callout position.
         priority:
             not_blank: Priority cannot be blank.
             numeric: Priority must be an integer.
