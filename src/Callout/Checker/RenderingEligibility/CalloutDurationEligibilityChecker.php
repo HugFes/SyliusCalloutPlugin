@@ -22,7 +22,7 @@ final class CalloutDurationEligibilityChecker implements RenderingCalloutEligibi
         }
 
         $endsAt = $callout->getEndsAt();
-        if (null !== $startsAt && $now > $endsAt) {
+        if (null !== $endsAt && $now > $endsAt) {
             return false;
         }
 

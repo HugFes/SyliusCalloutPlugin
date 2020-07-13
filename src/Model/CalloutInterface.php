@@ -47,7 +47,7 @@ interface CalloutInterface extends
 
     public function setEndsAt(?DateTimeInterface $endsAt): void;
 
-    public function getPriority(): int;
+    public function getPriority(): ?int;
 
     public function setPriority(int $priority): void;
 

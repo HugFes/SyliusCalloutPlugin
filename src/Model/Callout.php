@@ -27,7 +27,7 @@ class Callout implements CalloutInterface
     /** @var string */
     protected $code;
 
-    /** @var string */
+    /** @var string|null */
     protected $name;
 
     /** @var DateTimeInterface|null */
@@ -36,7 +36,7 @@ class Callout implements CalloutInterface
     /** @var DateTimeInterface|null */
     protected $endsAt;
 
-    /** @var int */
+    /** @var int|null */
     protected $priority = 0;
 
     /** @var string|null */
@@ -94,7 +94,7 @@ class Callout implements CalloutInterface
         $this->endsAt = $endsAt;
     }
 
-    public function getPriority(): int
+    public function getPriority(): ?int
     {
         return $this->priority;
     }

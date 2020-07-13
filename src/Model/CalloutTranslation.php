@@ -11,7 +11,7 @@ class CalloutTranslation extends AbstractTranslation implements CalloutTranslati
     /** @var int */
     protected $id;
 
-    /** @var string */
+    /** @var string|null */
     protected $text;
 
     public function getId(): ?int
@@ -23,6 +23,7 @@ class CalloutTranslation extends AbstractTranslation implements CalloutTranslati
     {
         return $this->text;
     }
+
     //allow null value ands validate this with validator constraint
     public function setText(?string $text): void
     {
